@@ -1,0 +1,144 @@
+html {
+  display: block;
+}
+
+body{
+  display: block;
+  margin: 8px;
+}
+
+body {
+  font-family: Jaldi, helvetica, sans-serif;
+  background-image: url(https://res.cloudinary.com/jkeohan/image/upload/v1465860054/GAbg_faded_aatkni.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+  background-color: #F1F1F1;
+  line-height: 1.25;
+  font-size: 20px;
+}
+
+div {
+  display: block;
+}
+
+div.logo {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+h1 {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 5px;
+  font-family: 'Jaldi', helvetica, sans-serif;
+  text-align: left;
+  line-height: 48px;
+  font-size: 48px;
+}
+
+h1 {
+  display: block;
+  -webkit-margin-before: 0.67em;
+  -webkit-margin-after: 0.67em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+h4 {
+  max-width: 800px;
+  margin: auto;
+  color: red;
+}
+
+h4 {
+  display: block;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+div.intro {
+  max-width: 800px;
+/*   margin: auto; - adding this parameter shrinks my div box, no longer aligning it with my headers and other divs - Why?*/
+}
+
+p {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0px;
+}
+
+ul, menu, dir {
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+li {
+  display: inline;
+  padding: 15px;
+}
+
+/* What does this formatting do?
+
+li {
+  -text-align: -webkit-match-parent;
+} 
+
+*/  
+
+li:hover {
+  color:red;
+}
+/* something fun to add interactivty to the city names */
+
+.infolinks:hover {
+  font-weight: bold;
+}
+/* going crazy with the hover functionality */
+ 
+div.locations {
+  max-width: 550px;
+  margin: auto;
+  padding: 5px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+hr {
+  max-width: 800px;
+  margin: auto;
+  border-top: 1px dotted #CCCCCC;
+}
+
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after: 0.5em;
+  -webkit-margin-start: auto;
+  -webkit-margin-end: auto;
+  overflow: hidden;
+  border-stlye: inset;
+  border-width: 1px;
+}
+
+.bolder {
+ font-weight: bold; 
+}
