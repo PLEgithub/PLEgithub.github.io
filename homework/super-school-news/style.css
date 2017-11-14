@@ -1,21 +1,27 @@
+* {
+  box-sizing:border-box;
+}
+
+
 .container {
-	width: 960px;
+/* 	width: 960px; */
 	margin: 0 auto;
 }
 
 header {
 	background-color: yellow;
 	overflow: hidden;
-	padding: 10px 25px;
+	padding: 0px 25px;
 }
 
 header h1 {
 	float: left;
 	font-size: 30px;
+  font-weight:100;
 }
 
 header nav {
-	margin-top: 6px;
+	margin-top: 21px;
 	float: right;
 }
 
@@ -28,19 +34,86 @@ header nav a {
 
 section {
 	background-color: black;
+/*   display:inline-block; */
+/*   text-align:center; */
+  margin:0 auto;
+  overflow:hidden;
 }
 
 article {
 	background-color: white;
 }
 
-/* targets the 1st article; nth-child(2) would target the 2nd article*/
-article:nth-child(1) {
+/* targets the 1st article; nth-child(2) would target the 2nd article */
+/* article:nth-child(1) {
 	margin-right: 10px;
-}
+} */
 
 article h1 {
 	font-size: 20px;
 	text-align: center;
-	padding: 5px 0;
+/* 	padding: 5px 0; */
+  font-weight:100;
+}
+
+.artdiv {
+  width: 48%;
+  float:left;
+  margin: 10px 5px;
+  padding: 0 5px 0 10px;
+}
+
+.artdiv:nth-child(1) {
+  margin-left:15px;
+}
+
+.artp {
+  text-align:left;
+  margin-top:-5px;
+}
+
+@media screen and (max-width:768px) {
+  header {
+    text-align:center;
+    padding-bottom:10px;
+  }
+  
+  header h1 {
+    float:none;
+    font-size:32px;
+  }
+  
+  header nav {
+    float:none;
+  }
+  
+  header nav a {
+    font-size:24px;
+  }
+  
+  section {
+    width:100%
+  }
+  
+  .artdiv {
+/*     display:block; */
+    float:none;
+    width:96%;
+/*     margin-left:10px; */
+    margin: -10px 0 -5px 10px;
+  }
+  
+  .artdiv:nth-child(1) {
+    margin-left:10px;
+}
+  
+  .artdiv h1 {
+    padding-top:5px;
+    margin-bottom:20px;
+  }
+  
+  .artp {
+    padding-bottom:10px;
+  }
+ 
 }
