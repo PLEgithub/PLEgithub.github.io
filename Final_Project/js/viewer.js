@@ -61,6 +61,17 @@ function onPlayerReady(event) {
   
 }
 
+// VIDEO PLAYBACK STOPPING ON OVERLAY FADEOUT
+$('#closeout').click(function() {
+  player.stopVideo();
+});
+
+$(document).keyup(function(e){
+    if(e.keyCode === 27)
+        $("#overlay").fadeOut();
+        player.stopVideo();
+});
+
 // CLICK EVENT TO TRIGGER OVERLAY W/ PLAYER
 $('button').click(function() {
   $("#overlay").fadeIn();
@@ -73,17 +84,6 @@ $('.videoth').click(function() {
 // CLOSEOUT functions for X click & Esc keystroke
 $('#closeout').click(function() {
   $("#overlay").fadeOut();
-});
-
-// VIDEO PLAYBACK STOPPING ON OVERLAY FADEOUT
-$('#closeout').click(function() {
-  player.stopVideo();
-});
-
-$(document).keyup(function(e){
-    if(e.keyCode === 27)
-        $("#overlay").fadeOut();
-        player.stopVideo();
 });
 
 
