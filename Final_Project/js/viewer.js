@@ -82,9 +82,13 @@ $('.videoth').click(function() {
 });
 
 // CLOSEOUT functions for X click & Esc keystroke
-$('#closeout').click(function() {
+$(document).on("click", "#closeout", function() {
   $("#overlay").fadeOut();
 });
+
+// $('#closeout').click(function() {
+//   $("#overlay").fadeOut();
+// });
 
 
 // VIDEO PLAYBACK TO MENU SELECTIONS
