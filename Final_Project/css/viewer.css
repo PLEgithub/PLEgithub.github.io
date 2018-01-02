@@ -1,0 +1,687 @@
+* {
+  box-sizing: border-box;
+}
+
+div {
+/*   border: 1px solid black; */
+}
+
+body {
+  background-image: url(https://plegithub.github.io/Final_Project/img/bgdust.png);
+  background-color: #f2f2f2;
+  width:100%;
+}
+
+#container {
+  margin: 0 auto;
+  width: 960px;
+/*   display:none; */
+  transition: all 3s;
+/*   border: 1px solid; */
+}
+
+header {
+  margin-top:70px;
+/*   border:1px solid red; */
+}
+
+header h1 {
+  text-align:center;
+  font-family: 'Raleway Dots', sans-serif;
+  font-size:38px;
+  transform: scale(1.5,1);
+  font-weight:bold;
+  margin-left: 575px;
+}
+
+header #mobileH1 {
+    display:none;
+  }
+
+/* CSS for Responsive nav bar	 */
+#nav
+{
+    /* container */
+}
+
+#nav > a
+    {
+        display: none;
+    }
+
+#nav li
+    {
+        position: relative;
+        box-shadow:5px 10px 18px #888888;
+    }
+ 
+    /* first level */
+ 
+#nav > ul
+    {
+/*         height: 3.75em; */
+        list-style-type:none;
+/*       display:flex; */
+    }
+
+#nav > ul > li > a {
+  text-decoration: none;
+  color:white;  
+}
+
+#nav > ul > li:hover {
+  font-weight:600;
+  cursor:pointer;
+  }
+
+#nav > ul > li
+        {
+  width: 25%;
+  height: 100%;
+  float: left;
+  background-color: #9e4747;
+  color: white;
+  /*   padding: 7px 40px; */
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:100;
+/*   opacity:0.9; */
+  text-align:center;
+  line-height:40px;
+  letter-spacing:1px;
+  border-right:1px solid rgba(255,255,255,0.8);
+        }
+
+#nav > ul > li:last-of-type {
+  border-right:none;
+  border-radius:0 8px 8px 0;
+  cursor:default;
+        }
+
+#nav > ul > li:first-of-type {
+      border-radius:8px 0 0 8px;
+        }
+
+#nav > ul > li:nth-of-type(2) {
+      cursor:default;
+        }
+
+#nav > ul > li > a:last-of-type {
+  cursor:default;
+        }
+
+#nav > ul > li > a:nth-of-type(2) {
+      cursor:default;
+        }
+ 
+    /* second level */
+ 
+#nav li ul
+    {
+        display: none;
+        position: absolute;
+        top: 100%;
+        list-style-type:none;   
+        margin:0;
+        padding:0;
+    }
+
+#nav li ul li:last-of-type {
+  border-radius: 0 0 5px 5px;
+}
+
+#nav li:hover ul
+        {
+            display: block;
+         width:100%;
+         }
+
+#nav li ul li {
+  width:100%;
+  background-color: #9e4747;
+  color: white;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-weight:100;
+/*   opacity:0.7; */
+  text-align:center;
+  line-height:50px;
+  border-top:1px solid rgba(255,255,255,0.4)
+}
+
+#nav li ul li:hover {
+  background-color: #b86161;
+}
+
+#nav li ul li a {
+  text-decoration: none;
+  color:white;
+}
+
+#nav > ul > li > ul > li > a:hover {
+  font-weight:600; 
+}
+
+#nav > ul > li > ul > li:hover {
+  font-weight:600; 
+  cursor:pointer;
+}
+
+@media only screen and ( max-width: 40em ) /* 640 */
+{
+/*   div { border:1px black solid} */
+  body {
+    margin:0;
+  }    
+  
+  main {
+    padding: 20px 0 0 0;
+  }  
+  
+#container {
+    max-width:100%;
+  }
+  
+/* HEADER & NAV */
+ header {
+    margin-top:40px;
+  }
+
+header h1 {
+  display:none;
+}
+  
+ header #mobileH1 {
+    display:block;
+    font-family: 'Raleway Dots', sans-serif;
+    font-size:30px;
+    font-weight:bold;
+    transform: scale(1.5,1);
+    text-align:center;
+/*     margin-left:80px; */
+    margin-bottom:10px;
+  }
+  
+ main h2 {
+    width:100%;
+    text-align:left;
+    margin-left:-50px;
+    font-size:18px;
+  }
+  
+  #videolist {
+/*     border: 1px solid pink; */
+    width:100%;
+    margin-left:-40px;
+  }
+  
+  #videoul {
+    display:flex;
+    flex-direction:column;
+/*     border:1px solid blue; */
+    width:90%;
+    margin-left:0;
+    justify-content:center;
+    }
+  
+  .videoli {
+    width:100%;
+/*     border:1px solid green; */
+  }
+  
+  #videolist li {
+/*     border:1px solid black; */
+    width:90%;
+    margin-left:-20px;
+        margin-bottom:15px;
+  }  
+  
+.videoli h3 {
+  margin-top:50px;
+/*   border:1px solid red; */
+}  
+  
+  button {
+    display:none;
+  }
+  
+ #player {
+    display:block;
+    width:100%;
+    height:100%;
+  }
+  
+  #nav {
+      position: relative;
+      background-color: #9e4747;
+      color: white;
+      font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+      font-weight:100;
+      opacity:1;
+      text-align:center;
+      line-height:50px;
+      padding: 5px 0;
+    }
+  
+  #nav > a  {
+      text-decoration: none;
+      color:white;
+      text-align:left;
+      margin-left:15px;
+        }
+ 
+  #nav > ul {
+    margin:0;
+    padding:0;
+  }
+  
+  #nav > ul > li {
+    opacity:1;
+    text-align:left;
+    padding-left: 30px;
+    border-right:none;
+  }
+  
+#nav > ul > li:last-of-type {
+    border-radius:0;
+        }
+  
+ #nav > ul > li:first-of-type {
+      border-radius:0;
+        }
+  
+ #nav > ul > li > ul > li {
+    opacity:1;
+    text-align:left;
+    padding-left: 50px;
+  }
+  
+  #nav:not( :target ) > a:first-of-type,
+  
+  #nav:target > a:last-of-type {
+            display: block;
+        }
+ 
+    /* first level */
+ 
+    #nav > ul {
+        height: auto;
+        display: none;
+        position: absolute;
+        left: 0;
+        right: 0;  
+    }
+   
+    #nav:target > ul {
+            display: block;
+        }
+    #nav > ul > li {
+            width: 100%;
+            float: none;
+        }
+ 
+    /* second level */
+ 
+    #nav li ul {
+        position: static;
+          }
+
+
+#burger {
+  width:40px;
+  margin:10px;
+}
+
+#burger .hr {
+  border:2px solid white;
+  margin:8px 0;
+  height:1px;
+  background-color: white;
+}
+  
+/* TRYING TO MAKE YT PLAYER FULLSCREEN ON MOBILE */
+.auto-resizable-iframe {
+  max-width: 40em;
+  margin: 0px auto;
+}
+
+.auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0px;
+}
+
+.auto-resizable-iframe #player {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}  
+  
+}
+/* END OF MEDIA QUERY */
+/*END of Nav CSS  */
+
+main {
+  width: 90%;
+  margin: 170px 0 0 60px;
+  padding: 0 0 60px 0;
+/*   text-align:right; */
+/*   border: 1px solid blue; */
+  position:relative;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  transform: scale(.925,1);
+  letter-spacing: .6px;  
+}
+
+h2 {
+  font-family: 'Crete Round', sans-serif;
+  letter-spacing: .6px; 
+  font-weight:500;
+  text-align:center;
+  color:#595959;
+}
+
+footer {
+  text-align:center;
+  margin: 300px 0 50px 0;
+}
+
+
+
+#playbackBtns {
+  
+}
+
+#videolist {
+  display:flex;
+/*   border:1px solid red; */
+}
+
+#videoul {
+  list-style-type:none;
+  display:flex;
+/*   justify-content:space-between; */
+}
+
+.videoli {
+  display:inline-block;
+  justify-content:space-between;
+  width:24%;
+  margin: -10px 5px;
+  text-align:center;
+/*   border:1px solid lightblue; */
+  overflow:hidden;
+}
+
+#videoul li {
+  justify-content: space-between;
+}
+
+.videoth {
+  width: 185px;
+  height: 110px;
+  border:1px solid lightgray;
+  cursor:pointer;
+/*   border:1px solid red; */
+}
+
+
+
+/* Thumbnail wrapper for hover title effect */
+.thumbwrap {
+  position: relative;
+  top:0;
+  transition:all 2s;
+/*   opacity:1; */
+  text-align:center;
+  overflow:hidden;
+/*   border:1px solid red; */
+  padding:10px;
+}
+
+h3 {
+  position: absolute;
+  opacity:0;
+  transition:all 0.5s;
+  color:black;
+  width:100%;
+  font-size:50px;
+  font-family:"Crete Round", sans-serif;
+  font-weight: bold;
+  margin:20px 0 0 0;
+/*   border:1px solid red; */
+}
+
+.thumbwrap img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  opacity:1;
+    transition:all 0.5s;
+/*     box-shadow: 0 10px 10px 0 lightgray; */
+  }
+
+.thumbwrap:hover img{
+  opacity:0.5;
+  transform: scale(1.2);
+  background-color: lightgray;
+  box-shadow:none;
+}
+
+.thumbwrap:hover h3 {
+  opacity:1;
+}
+
+/* Button, hover and click effects */
+.videoli button {
+  font-size:20px;
+  padding:8px 40px;
+  margin-top:15px;
+  margin-bottom:15px;
+  border-radius:10px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2), 0 6px 30px 0 rgba(0,0,0,0.19);
+  outline:none;
+}
+
+.videoli button:hover {
+  border: 1px solid lightgray;
+/*   background-color: lightgray; */
+  box-shadow: 5px 10px 20px lightgray inset;
+  }
+
+.videoli button:active {
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  box-shadow: 5px 10px 20px gray inset;
+  }
+
+.videoli img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*OVERLAY PROMPT  */
+#overlay {
+  display:none;
+}
+
+#overlayInit {
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background-color: rgba(0,0,0,0.85);
+  z-index:0;
+  transition: all 1s;
+}
+
+#closeout {
+  color:gray;
+  font-family: sans-serif;
+  font-size:44px;
+  position:absolute;
+  right:0;
+  margin-right:40px;
+  cursor:pointer;
+}
+
+#player {
+  width:640px;
+  height:390px;
+  margin:0 auto;
+  display:block;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+/*     height: 30%; */
+/*     margin: -15% 0 0 -25%; */
+  z-index:0;
+/*   opacity:1; */
+}
+
+#playbackBtns {
+  width:100%;
+  padding-bottom:40px;
+  text-align:center;
+  font-size:60px;
+  color:white;
+  position:absolute;
+  bottom:20px;
+/*   left:45%; */
+  display:flex;
+  letter-spacing:10px;
+  cursor:pointer;
+  justify-content:center;
+}
+
+#playbackBtns .fa:active {
+  color:lightgray;
+}
+
+.fa {
+  color:gray;
+  opacity:.7;
+  }
+
+.fa-play {
+/*   margin:0 auto;
+  text-align:center; */
+}
+
+.fa-pause {
+    transform: scale(.8,1);
+/*   letter-spacing:40px; */
+}
+
+#playpause {
+  justify-content:center;
+}
+
+#videoselectdiv {
+/*   display:inline-block; */
+  justify-content:center;
+  margin-left:100px;
+}
+
+#videoselect {
+  color: #6b6b6c;
+  font-size: 26px;
+  background: #fff;
+  border: 1px solid #111;
+  padding: 0px 30px;
+  display: inline-block;
+  width: 300px;
+  margin-right: 24px;
+  font-family: helvetica, arial, sans-serif;
+  height: 72px;
+  line-height: 74px;
+  vertical-align: middle;
+  box-shadow: #111 0 0 20px;
+  outline:none;
+  opacity:.9;
+  font-weight:bold;
+}
+
+#overlayselectdiv {
+/*   display:inline-block; */
+    justify-content:center;
+/*   margin-left:100px; */
+}
+
+#overlayselect {
+  color: #6b6b6c;
+  font-size: 26px;
+  background: #fff;
+  border: 1px solid #111;
+  padding: 0px 30px;
+  display: inline-block;
+  width: 300px;
+  margin-right: 24px;
+  font-family: helvetica, arial, sans-serif;
+  height: 72px;
+  line-height: 74px;
+  vertical-align: middle;
+  box-shadow: #111 0 0 20px;
+  outline:none;
+  opacity:.9;
+  font-weight:bold;
+}
+
+/*OVERLAY 4: RAINFALL EFFECT  */
+.drop {
+  background:linear-gradient(top,rgba(13,52,58,1) 0%, rgba(255,255,255,0.6) 100%);
+  width:1px;
+  height:89px;
+  position:absolute;
+  bottom:200px;
+  animation:fall .63s linear infinite; 
+  z-index:-1;
+}
+
+@keyframes fall {
+  to {margin-top:900px;}
+}
+
+/* Some OVERLAY CSS Designs from: CSS3 Patterns Gallery: http://lea.verou.me/css3patterns/ */
+/* OVERLAY: LINED PAPER EFFECT, added using jQuery */
+/* background-color: #fff; 
+background-image: 
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+linear-gradient(#eee .1em, transparent .1em);
+background-size: 100% 1.2em; */
+
+/* OVERLAY: BLUEPRINT GRID EFFECT, added using jQuery */
+/* background-color:#269;
+background-image: linear-gradient(white 2px, transparent 2px),
+linear-gradient(90deg, white 2px, transparent 2px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px */
+
+/* OVERLAY: QBERT EFFECT, added using jQuery */
+/* background-color:#556;
+background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+background-size:80px 140px;
+background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px; */
+
+/* OVERLAY: ARGYLE EFFECT, added using jQuery */
+/* background-color: #6d695c;
+background-image:
+repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+background-size: 70px 120px; */

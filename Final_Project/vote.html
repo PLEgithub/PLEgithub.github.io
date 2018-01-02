@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LineGallery: Vote!</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway+Dots|Raleway:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/vote.css">
+<meta content="width=device-width; initial-scale=1.0; maximum-scale=1.0;  user-scalable=0;" name="viewport">    
+<!--   jQuery link for intro logo transition -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vote.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--     background pattern from Subtle Patterns -->
+    
+  </head>
+  <body>
+    <div id="container">
+    <header>
+      <h1>LINE GALLERY</h1>
+      <div id="mobileH1">LINE GALLERY</div>
+      <nav id="nav" role="navigation">
+    <a href="#nav" title="Show navigation"><div id="burger">
+      <div class="hr"></div>
+      <div class="hr"></div>
+      <div class="hr"></div>
+    </div>
+    </a>
+    <a href="#" title="Hide navigation"><div id="burger">
+      <div class="hr"></div>
+      <div class="hr"></div>
+      <div class="hr"></div>
+    </div></a>
+    <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li>
+            <a href="/" aria-haspopup="true">Videos</a>
+            <ul>
+                <li><a href="/viewer.html">Watch</a></li>
+                <li><a href="/vote.html">Vote</a></li>
+            </ul>
+        </li>
+       <li><a href="/404.html">Press</a></li> 
+      <li>
+            <a href="/" aria-haspopup="true">About</a>
+            <ul>
+                <li><a href="/about.html">This Site</a></li>
+                <li><a href="/404.html">404</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+    </header>
+    <main>
+<h2>Vote on your favorite videos below!</h2>
+
+<!-- Form for Vote Google For/Sheet submission       -->
+    <div class="votediv">
+  <form id="voteform" action="https://docs.google.com/forms/d/e/1FAIpQLSeaA6tAUJUpOIXfEQrtQTGD-Khbgf34AxuGVw2CNTisk5j4AQ/formResponse" target="no-target">
+<!-- Acting as Multiple Choice survey, Q: Favorite Video?         -->
+<!-- copying in videlist div from viewpage, then adding inputs to lis -->
+  <div id="votevideolist">
+        <ul id="votevideoul">
+        <li class="votevideoli" id="votevideoli1">
+         <label for="e1"><div class="votethumbwrap">
+          <h3>LG #1</h3>  
+          <img class="votevideoth" id="votevideoimg1" src="https://drive.google.com/uc?id=1mymTE3fDTTWdj25pRToN6IFrIPq1HL3u" alt="Video 1 Thumbnail" /></div>
+            <div class="inputdiv"><input type="radio" name="entry.481214391" id="e1" value="Video 1"/><span class="inputText">LG #1</span></div></label>
+        </li>
+   
+        <li class="votevideoli" id="votevideoli2">
+         <label for="e2"><div class="votethumbwrap">
+          <h3>LG #2</h3>
+          <img class="votevideoth" id="votevideoimg2" src="https://drive.google.com/uc?id=1xwIX8D6Iwuv_RsaAcWx3RK0K00JAHh0X" alt="Video 2 Thumbnail" /></div>
+          <div class="inputdiv"><input type="radio" name="entry.481214391" id="e2" value="Video 2"/><span class="inputText">LG #2</span></div></label>
+        </li>
+     
+      <li class="votevideoli" id="votevideoli3">
+        <label for="e3"><div class="votethumbwrap">
+          <h3>LG #3</h3>
+          <img class="votevideoth" id="votevideoimg3" src="https://drive.google.com/uc?id=1mEK_hTo2i2gdNY9BkvywLw_2nEltwJWh" alt="Video 3 Thumbnail"/></div>
+           <div class="inputdiv"><input type="radio" name="entry.481214391" id="e3" value="Video 3"/><span class="inputText">LG #3</span></div></label>
+      </li>
+    
+      <li class="votevideoli" id="votevideoli4">
+        <label for="e4"><div class="votethumbwrap">
+          <h3>LG #4</h3>
+          <img class="votevideoth" id="votevideoimg4" src="https://drive.google.com/uc?id=1ndisyu12Tz2fNXEiHljO5n5vw_wQpQbo" alt="Video 4 Thumbnail"/></div>
+           <div class="inputdiv"><input type="radio" name="entry.481214391" id="e4" value="Video 4"/><span class="inputText">LG #4</span></div></label>  
+      </li>
+        </ul>
+      </div>  
+   <p><a href ="#"><input class="button" id="votesubmit" type="submit" value="Submit"></a> </p>     
+     
+<iframe src="#" id="no-target" name="no-target" style="position: absolute; top: -9999em; display:none;" onload="this.style.position='static'; this.style.visibility='visible';">< /iframe> 
+<!-- in-line style above to keep form from redirecting to Google confirmation page   -->
+      </form></div> 
+     
+    </main>
+    <footer>
+      <p class="footp">© 2017 GA FEWD Participant</p>
+    </footer>  
+    </div>
+      
+<!-- JS for responsive nav bar:     -->
+<script type="text/javascript" src="https://osvaldas.info/examples/drop-down-navigation-touch-friendly-and-responsive/doubletaptogo.js"></script>   <!-- Fusioncharts ref -->
+<!-- <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>         -->
+    </body>
+ </html>
