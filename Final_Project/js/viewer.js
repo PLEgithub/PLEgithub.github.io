@@ -25,37 +25,39 @@ $('#closeout').click(function() {
 
 
 var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'p2qh0iu2q0U',
-          playerVars: { 'autoplay': 0, 'controls': 0, 'enablejsapi': 1, 'showinfo':0, 'modestbranding': 1, 'rel': 0 , 'loop':1},
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
+function onYouTubeIframeAPIReady() {
+	player = new YT.Player('player', {
+	  height: '390',
+	  width: '640',
+	  videoId: 'p2qh0iu2q0U',
+	  playerVars: { 'autoplay': 0, 'controls': 0, 'enablejsapi': 1, 'showinfo':0, 'modestbranding': 1, 'rel': 0 , 'loop':1},
+	  events: {
+	    'onReady': onPlayerReady,
+	    'onStateChange': onPlayerStateChange
+	  }
+	});
+}
 
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
+// onYouTubeIframeAPIReady()
 
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for 11 seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-          player.playVideo();
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+event.target.playVideo();
+}
+
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for 11 seconds and then stop.
+var done = false;
+function onPlayerStateChange(event) {
+if (event.data == YT.PlayerState.ENDED) {
+  player.playVideo();
+  done = true;
+}
+}
+function stopVideo() {
+player.stopVideo();
+}
 
 // ADDING PLAY/PAUSE FUNCTIONALITY TO BUTTONS IN OVERLAY MENU
 function onPlayerReady(event) {
