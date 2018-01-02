@@ -1,17 +1,3 @@
-// CLICK EVENT TO TRIGGER OVERLAY W/ PLAYER
-$('button').click(function() {
-  $("#overlay").fadeIn();
-});
-
-$('.videoth').click(function() {
-  $("#overlay").fadeIn();
-});
-
-// CLOSEOUT functions for X click & Esc keystroke
-$('#closeout').click(function() {
-  $("#overlay").fadeOut();
-});
-
 // Below copied from <script> tag from YouTube API:
 // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -74,6 +60,20 @@ function onPlayerReady(event) {
   });
   
 }
+
+// CLICK EVENT TO TRIGGER OVERLAY W/ PLAYER
+$('button').click(function() {
+  $("#overlay").fadeIn();
+});
+
+$('.videoth').click(function() {
+  $("#overlay").fadeIn();
+});
+
+// CLOSEOUT functions for X click & Esc keystroke
+$('#closeout').click(function() {
+  $("#overlay").fadeOut();
+});
 
 // VIDEO PLAYBACK STOPPING ON OVERLAY FADEOUT
 $('#closeout').click(function() {
