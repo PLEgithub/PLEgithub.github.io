@@ -1,6 +1,3 @@
-// JS for Responsive Nav bar
-$( '#nav li:has(ul)' ).doubleTapToGo();
-
 // CLICK EVENT TO TRIGGER OVERLAY W/ PLAYER
 $('button').click(function() {
   $("#overlay").fadeIn();
@@ -220,4 +217,7 @@ function createRain() {
     }
 
 });
+
+// JS for Responsive Nav bar
+$( '#nav li:has(ul)' ).doubleTapToGo();
 
