@@ -181,38 +181,38 @@ function createRain() {
 // OVERLAY 1: BLACK
     if($(this).val() == "selover1"){
       $("#overlayInit").removeClass("rain");
-      // $(".drop").css("opacity","0");
+      $(".drop").css("opacity","0");
       $("#overlayInit").css("background","").css("background-image","").css("background-size","").css("background-position","").css("background-color","rgba(0,0,0,1)");
           }
 // OVERLAY 2: LINED PAPER 
     if($(this).val() == "selover2"){
       $("#overlayInit").removeClass("rain");
-      // $(".drop").css("opacity","0");
+      $(".drop").css("opacity","0");
       $("#overlayInit").css("background","").css("background-position","").css("background-color","#fff").css("background-image","linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),linear-gradient(#eee .1em, transparent .1em)").css("background-size","100% 1.2em");
           }
 // OVERLAY 3: BLUEPRINT GRID
     if($(this).val() == "selover3"){
       $("#overlayInit").removeClass("rain");
-      // $(".drop").css("opacity","0");
+      $(".drop").css("opacity","0");
       $("#overlayInit").css("background","").css("background-image","linear-gradient(white 2px, transparent 2px),linear-gradient(90deg, white 2px, transparent 2px),linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px)").css("background-size","100px 100px, 100px 100px, 20px 20px, 20px 20px").css("background-color","#002b80").css("background-position","-2px -2px, -2px -2px, -1px -1px, -1px -1px");
           }
 // OVERLAY 4: ARGYLE
     if($(this).val() == "selover4"){
       $("#overlayInit").removeClass("rain");
-      // $(".drop").css("opacity","0");
+      $(".drop").css("opacity","0");
       $("#overlayInit").css("background","").css("background-image","repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px,transparent 1px, transparent 60px),repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1))").css("background-size","70px 120px").css("background-color","#6d695c").css("background-position","");
           }
 // OVERLAY 5: RAINFALL   
    if($(this).val() == "selover5"){
       $("#overlayInit").css("background-position","").css("background-image","").css("background-size","").css("background","-webkit-gradient(linear,left top,left bottom,from(#05124d),to(#000101))");
       $("#overlayInit").addClass("rain");
-      // $(".drop").css("opacity","1");
       createRain();
+      $(".drop").css("opacity","1");
           }
 // OVERLAY 6: Q-BERT
   if($(this).val() == "selover6"){
       $("#overlayInit").removeClass("rain");
-      // $(".drop").css("opacity","0");
+      $(".drop").css("opacity","0");
       $("#overlayInit").css("background","").css("background-image","linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a),linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a)").css("background-size","80px 140px").css("background-color","").css("background-position","0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px");
           }
 // had to remove :VOID from the end of the above function    
